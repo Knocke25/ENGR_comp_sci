@@ -1,0 +1,52 @@
+
+
+# Beam 3 - for MAE 3403 Fall 2017 - Homework 9
+
+# Lines starting with a # character are comments to be ignored
+# You may have comment lines anywhere in the file
+
+# blank lines are also allowed and will be ignored
+
+# Other lines in the file are identified by specific KEYWORDS, followed by data
+# KEYWORDS may include Capital letters, but capitalization must not be required
+# each line stands alone, and there is no required ORDER to the file
+
+Title, 'The Final Beam in this Homework'
+Distance_unit,  'inch'
+Force_unit, 'lbf'
+
+#         Sut(ksi) Sy(ksi) E(Mpsi) 
+Material,   105,    82,      30
+
+Fatigue_factor, 1.5
+Static_factor, 1.5
+
+shaft_length, 12
+Moment_of_inertia,  3.1
+
+# Loads - might be point loads or point moments
+#         Sign convention:  up is positive for point loads
+#                           clockwise is positive for point moments
+
+#	    If you wish to place a Load at the end of the beam, you may
+#         use the word "End" rather than use a numerical value
+
+
+#             Location   Magnitude 
+point_load,     5.5,          -317.49     
+point_load,     7.8,            500    
+point_load,     end,          -430     
+  
+
+# there is no limit on the number of load entries
+
+
+# Supports:  there must be two and only two supports
+#            and they must be located between x = 0 and x = BeamLength
+#		  If you wish to place a support at the end of the beam, you may
+#            use the word "End" rather than use a numerical value
+
+#           Location   
+support,       0
+support,     1.2
+  

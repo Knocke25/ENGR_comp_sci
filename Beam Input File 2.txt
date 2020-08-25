@@ -1,0 +1,57 @@
+
+
+# Beam 2 - for MAE 3403 Fall 2017 - Homework 9
+
+# Lines starting with a # character are comments to be ignored
+# You may have comment lines anywhere in the file
+
+# blank lines are also allowed and will be ignored
+
+# Other lines in the file are identified by specific KEYWORDS, followed by data
+# KEYWORDS may include Capital letters, but capitalization must not be required
+# each line stands alone, and there is no required ORDER to the file
+
+Distance_unit,  'inch'
+Force_unit, 'lbf'
+
+#         Sut(ksi) Sy(ksi) E(Mpsi) 
+Material,   105,    82,      30
+
+# Loads - might be point loads or point moments
+#         Sign convention:  up is positive for point loads
+#                           clockwise is positive for point moments
+
+#	    If you wish to place a Load at the end of the beam, you may
+#         use the word "End" rather than use a numerical value
+
+
+#             Location   Magnitude 
+point_moment,   end,         -3000    
+point_load,     4,        -500    
+point_load,     7,          430     
+point_load,     0,          -300     
+  
+point_moment,   1.75,         2000    
+
+# there is no limit on the number of load entries
+
+
+# Supports:  there must be two and only two supports
+#            and they must be located between x = 0 and x = BeamLength
+#		  If you wish to place a support at the end of the beam, you may
+#            use the word "End" rather than use a numerical value
+
+#           Location   
+support,     8.5
+support,       1.5    
+
+Fatigue_factor, 2.5
+Static_factor, 3.5
+
+shaft_length, 11.5
+Moment_of_inertia,  1.2
+Title, 'Beam 2'
+
+
+
+  
