@@ -1,4 +1,5 @@
 # Python Project
+# To be used with Shaft Design Input files
 # Brayden Knocke, Gharabet Torossian, Taylor Vazquez
 import numpy as np
 import matplotlib.pyplot as plt
